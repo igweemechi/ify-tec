@@ -47,9 +47,6 @@ function showSlider(){
 function setPositionThumbnail () {
     let thumbnailActive = document.querySelector('.thumbnail .item.active');
     let rect = thumbnailActive.getBoundingClientRect();
-    if (rect.left < 0 || rect.right > window.innerWidth) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
-    }
 }
 
 // click thumbnail
